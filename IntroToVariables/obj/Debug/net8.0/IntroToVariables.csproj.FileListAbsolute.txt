@@ -1,0 +1,14 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\bin\Debug\net8.0\IntroToVariables.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\bin\Debug\net8.0\IntroToVariables.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\bin\Debug\net8.0\IntroToVariables.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\bin\Debug\net8.0\IntroToVariables.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\bin\Debug\net8.0\IntroToVariables.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\refint\IntroToVariables.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\IntroToVariables.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\IntroToVariables\obj\Debug\net8.0\ref\IntroToVariables.dll
