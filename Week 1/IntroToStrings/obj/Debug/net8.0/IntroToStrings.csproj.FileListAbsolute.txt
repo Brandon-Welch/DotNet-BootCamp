@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\bin\Debug\net8.0\IntroToStrings.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\bin\Debug\net8.0\IntroToStrings.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\bin\Debug\net8.0\IntroToStrings.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\bin\Debug\net8.0\IntroToStrings.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\bin\Debug\net8.0\IntroToStrings.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\refint\IntroToStrings.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\IntroToStrings.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 1\IntroToStrings\obj\Debug\net8.0\ref\IntroToStrings.dll

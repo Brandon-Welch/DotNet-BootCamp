@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\MoreVariables\\MoreVariables.csproj": {}
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\IntroToStrings\\IntroToStrings.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\MoreVariables\\MoreVariables.csproj": {
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\IntroToStrings\\IntroToStrings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\MoreVariables\\MoreVariables.csproj",
-        "projectName": "MoreVariables",
-        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\MoreVariables\\MoreVariables.csproj",
+        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\IntroToStrings\\IntroToStrings.csproj",
+        "projectName": "IntroToStrings",
+        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\IntroToStrings\\IntroToStrings.csproj",
         "packagesPath": "C:\\Users\\A140953\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\MoreVariables\\obj\\",
+        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 1\\IntroToStrings\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A140953\\AppData\\Roaming\\NuGet\\NuGet.Config"
