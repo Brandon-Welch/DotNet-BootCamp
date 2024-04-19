@@ -170,7 +170,3 @@ switch (option)
         System.Console.WriteLine("You did not choose a valid option (1-4). Please try again");
         break;
 }
-
-
-
-//Loops
