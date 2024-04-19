@@ -27,7 +27,7 @@ Guessing Game - Make a New Project to work on this:
 
 
 /*
-//Attempt with help of CoPilot that allows user to play again.
+//Attempt with help of CoPilot that allows user to play again. I GIVE UP!!!!!!!!!!!!!
 System.Console.WriteLine("\nHello, welcome to the Guessing Game! Please guess a number between 1-100."); // \n in front to create a blank line between the prompt and the program
 int answer = 48; // Generate a random number between 1 and 100
 
