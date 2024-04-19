@@ -37,7 +37,7 @@ while (playAgain == "Yes")
     {
         string guess = Console.ReadLine();
 
-        if (int.TryParse(guess, out int guessInt)) 
+        if (int.TryParse(guess, out int guessInt))
             {
                 if (guessInt == answer)
                     {
@@ -68,11 +68,15 @@ System.Console.WriteLine("Thanks for playing");
 //-------------------------------------------------------------------------------------------------------------------------
 // /*
 //Attempt with help of CoPilot that funcitons as expected.
+
 System.Console.WriteLine("\nHello, welcome to the Guessing Game! Please guess a number between 1-100."); // \n in front to create a blank line between the prompt and the program
-int answer = 48; // Generate a random number between 1 and 100
+//int answer = 48; // Generate a random number between 1 and 100 - original answer that works... used copilot for help on Random number generation
+Random rnd = new Random ();
+int answer = rnd.Next(1, 101); //The Next(minValue, maxValue) method generates a random integer within the specified range. In this case, it produces a number between 1 and 100 (inclusive).
 
 while (true)
 {
+    Console.Write("\tYour guess is: ");
     string guess = Console.ReadLine();
 
     if (int.TryParse(guess, out int guessInt)) 
