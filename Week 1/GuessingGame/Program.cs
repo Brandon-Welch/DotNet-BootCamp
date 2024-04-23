@@ -18,55 +18,124 @@ Guessing Game - Make a New Project to work on this:
             -the user is prompted to play again? without having to restart the entire application
                 -hint - likely will involved another (outer) while look
 
+        Bonus Bonus:
+            -adjust the range in which you tell the user to guess on their previous wrong answer.
+                -example, if they pick 40 and its wrong, the response would tell then its low, pick a number between 40-100
+                -Allow the user to pick the numbers that they will guess betwwen when the game starts (let user pick x-xxx)
+                -keep track of number of guesses and return the # when the correct answer is selected (you got it right... AND it took you XXX guesses)
+                
                 -convert helpbot into numerical options instead of word options
                 
 
 */
 
 
+///*
+//Attempt with help of CoPilot that allows user to play again. Took their example from  "c# using 2 while loops and abilite to answer yes or no question in outer loop > use if statement instead of switch
+
+    //Console.Clear(); //<<<<<<<<<<<<<<<<<<<<Add back after it works>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    System.Console.WriteLine("\nHello, welcome to the Guessing Game! Please guess a number between 1-100."); // \n in front to create a blank line between the prompt and the program
+    Console.Write("\tYour guess is: ");
+    int answer = 48; // Generate a random number between 1 and 100
+    
+    bool playAgain = true;
+
+while (playAgain)
+{
+    Console.Write("\tYour guess is: ");
+    string guess = Console.ReadLine();
+
+    if (int.TryParse(guess, out int guessInt))
+    {
+        if (guessInt == answer)
+        {
+            System.Console.WriteLine("The correct answer was " + answer + "! Congrats! You won the guessing game!");
+            break; // without this, it will never exit the loop and will continue to accept inputs from user.
+        }
+        
+        else if (guessInt > answer)
+        {
+            System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is higher than the correct answer.");
+        }
+        else
+            {
+                System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is lower than the correct answer.");
+            }
+    }
+    else
+        {
+            System.Console.WriteLine("You entered a value that was not a number. Please enter a valid number between 1-100.");
+        }
+}
 
 
+    System.Console.WriteLine("\nDo you want to play again?");
+    string again = Console.ReadLine();
+
+    if (again.Equals("No", StringComparison.OrdinalIgnoreCase))
+    {
+        System.Console.WriteLine("Thanks for Playing!\n");
+        playAgain = false;
+    }
+
+//*/
+//------------------------------------------------------------------------------------------------------------------------------
 /*
 //Attempt with help of CoPilot that allows user to play again. I GIVE UP!!!!!!!!!!!!!
+//Console.Clear(); <<<<<<<<<<<<<<<<<<<<Add back after it works>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 System.Console.WriteLine("\nHello, welcome to the Guessing Game! Please guess a number between 1-100."); // \n in front to create a blank line between the prompt and the program
 int answer = 48; // Generate a random number between 1 and 100
+bool playAgain = true;
 
-while (playAgain == "Yes")
+while (playAgain)
+//while (true)
 {
-    while (true)
-    {
-        string guess = Console.ReadLine();
-
-        if (int.TryParse(guess, out int guessInt))
+    string again = "Yes";
+        
+        if (again == "Yes")
             {
-                if (guessInt == answer)
+                    while (true)
                     {
-                        System.Console.WriteLine("The correct answer was " + answer + "! Congrats! You won the guessing game!");
-                        break; // without this, it will never exit the loop and will continue to accept inputs from user.
-                    }
-                else if (guessInt > answer)
-                    {
-                        System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is higher than the correct answer.");
-                    }
-                else
-                    {
-                        System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is lower than the correct answer.");
+                        Console.Write("\tYour guess is: ");
+                        string guess = Console.ReadLine();
+
+                        if (int.TryParse(guess, out int guessInt))
+                            {
+                                if (guessInt == answer)
+                                    {
+                                        System.Console.WriteLine("The correct answer was " + answer + "! Congrats! You won the guessing game!");
+                                        break; // without this, it will never exit the loop and will continue to accept inputs from user.
+                                    }
+                                else if (guessInt > answer)
+                                    {
+                                        System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is higher than the correct answer.");
+                                    }
+                                else
+                                    {
+                                        System.Console.WriteLine("Sorry, Please try again. Your guess of " + guess + " is lower than the correct answer.");
+                                    }
+                            }
+                        else
+                            {
+                                System.Console.WriteLine("You entered a value that was not a number. Please enter a valid number between 1-100.");
+                            }
                     }
             }
         else
             {
-                System.Console.WriteLine("You entered a value that was not a number. Please enter a valid number between 1-100.");
+                System.Console.WriteLine("Thanks for playing!!!");
+                break;
             }
-    }
 
     System.Console.WriteLine("\nDo you want to play again?");
-    string playAgain = Console.ReadLine();
+    again = Console.ReadLine();
+
 }
 
 System.Console.WriteLine("Thanks for playing");
 */
 //-------------------------------------------------------------------------------------------------------------------------
-// /*
+ /*
 //Attempt with help of CoPilot that funcitons as expected.
 
 System.Console.WriteLine("\nHello, welcome to the Guessing Game! Please guess a number between 1-100."); // \n in front to create a blank line between the prompt and the program
@@ -102,7 +171,7 @@ while (true)
 }
 
 System.Console.WriteLine("Thanks for playing!");
-// */
+ */
 //-------------------------------------------------------------------------------------------------------------------------
 /* 
 //First Attempt - after research, need the WHILE loop to contain the IF... not If containing WHILE
