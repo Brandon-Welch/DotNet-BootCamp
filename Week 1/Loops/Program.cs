@@ -258,7 +258,7 @@ for (int i = 1; i <= size; i++) //OUTER LOOP
 {
     for (int j = 1; j <= i; j++) //INNER LOOP
     {
-        //System.Console.WriteLine("*"); //would make a column, need rows
+        //System.Console.WriteLine("*"); //WriteLine would make a column, need rows
         System.Console.Write("*"); //would make a row    
     }
     
@@ -343,12 +343,13 @@ for (int i = size; i >= 1; i--) //OUTER LOOP
     }
     
     System.Console.WriteLine();
+    Thread.Sleep(500); // puts a pause before moving to next step
     //System.Console.Write(" ");
 }
 System.Console.WriteLine("-----------------------------------");
 
 
-//-BONUS: Solve with a SINGLE loop
+//-BONUS: Solve with a SINGLE loop -Needed help from copilot, couldnt figure it out
 System.Console.WriteLine("-------------Single Loop Left Facing---------------");
 size = 5; // Adjust the size of the staircase as needed
 
@@ -359,6 +360,13 @@ size = 5; // Adjust the size of the staircase as needed
     }
 System.Console.WriteLine("-----------------------------------");
 
+
+// System.Console.WriteLine("Testing one loop solution");
+// for(int i = 1; i <= size; i++)
+// {
+//     string stair = "*";
+//     System.Console.WriteLine(string.Concat(Enumerable.Repeat(stair,i)));
+// }
 
 System.Console.WriteLine("-------------Single Loop Right Facing---------------");
 size = 5; // Adjust the size of the staircase as needed
@@ -393,22 +401,10 @@ size = 5; // Adjust the size of the staircase as needed
 System.Console.WriteLine("-----------------------------------");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-//-------------------------------
-//---------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 //Random Find - Makes a triangle
+System.Console.WriteLine("-------------Accidental Christmas Tree---------------");
 size = 5;
 
 for (int i = 1; i <= size; i++) //OUTER LOOP
@@ -419,13 +415,12 @@ for (int i = 1; i <= size; i++) //OUTER LOOP
         System.Console.Write(" ");
     }
 
-    for (int j = 1; j <= i; j++) //INNER LOOP
+    for (int k = 1; k <= i; k++) //INNER LOOP
     {       
-        System.Console.Write("*");
+        System.Console.Write("* ");
     }
     
     System.Console.WriteLine();
     //System.Console.Write(" ");
 }
 System.Console.WriteLine("-----------------------------------");
-*/
