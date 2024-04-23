@@ -30,7 +30,7 @@ Guessing Game - Make a New Project to work on this:
 */
 
 
-///*
+/*
 //Attempt with help of CoPilot that allows user to play again. Took their example from  "c# using 2 while loops and abilite to answer yes or no question in outer loop > use if statement instead of switch
 
     //Console.Clear(); //<<<<<<<<<<<<<<<<<<<<Add back after it works>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -78,7 +78,7 @@ while (playAgain)
         playAgain = false;
     }
 
-//*/
+*/
 //------------------------------------------------------------------------------------------------------------------------------
 /*
 //Attempt with help of CoPilot that allows user to play again. I GIVE UP!!!!!!!!!!!!!
@@ -209,3 +209,9 @@ else // (guess != answer)
        System.Console.WriteLine("Thanks for playing!");
     }
 */
+
+
+
+// Ryans Solution:
+
+
