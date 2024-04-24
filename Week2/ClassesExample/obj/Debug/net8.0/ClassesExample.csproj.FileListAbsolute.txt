@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\bin\Debug\net8.0\ClassesExample.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\bin\Debug\net8.0\ClassesExample.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\bin\Debug\net8.0\ClassesExample.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\bin\Debug\net8.0\ClassesExample.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\bin\Debug\net8.0\ClassesExample.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\refint\ClassesExample.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ClassesExample.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\ClassesExample\obj\Debug\net8.0\ref\ClassesExample.dll
