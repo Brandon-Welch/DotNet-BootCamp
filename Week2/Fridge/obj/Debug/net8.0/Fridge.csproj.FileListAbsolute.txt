@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\bin\Debug\net8.0\Fridge.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\bin\Debug\net8.0\Fridge.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\bin\Debug\net8.0\Fridge.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\bin\Debug\net8.0\Fridge.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\bin\Debug\net8.0\Fridge.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\refint\Fridge.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\Fridge.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week2\Fridge\obj\Debug\net8.0\ref\Fridge.dll
