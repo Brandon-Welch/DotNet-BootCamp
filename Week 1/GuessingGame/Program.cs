@@ -214,4 +214,45 @@ else // (guess != answer)
 
 // Ryans Solution:
 
+bool again = true;
+
+while (again)
+{
+    //The entire game starts here
+    Random random = new Random();
+    int correctNum = random.Next(1, 101);
+    int guess = 0;
+    string? input;
+
+    while (guess != correctNum)
+    {
+        System.Console.WriteLine("Please enter a number between 1-100: ");
+        input = Console.ReadLine();
+        if (input != null) guess = int.Parse(input);
+        // guess = int.Parse(Console.ReadLine() ?? "0"); //Null Coalescing Operator
+
+        if (guess > correctNum)
+        {
+            System.Console.WriteLine("Your guess was Too High!");
+        }
+        else if (guess < correctNum)
+        {
+            System.Console.WriteLine("Your guess was Too Low!");
+        }
+    }
+
+    System.Console.WriteLine("Your guess was correct! The number was: " + correctNum);
+    //The entire game ends here
+
+    System.Console.WriteLine("Would you like to play again? (Y) or (N)?");
+    input = Console.ReadLine();
+
+    if (!"Y".Equals(input))
+    {
+        again = false;
+    }
+}
+
+System.Console.WriteLine("Thanks for Playing! Goodbye!");
+
 
