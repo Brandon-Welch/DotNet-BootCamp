@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\bin\Debug\net8.0\PracticeFile.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\bin\Debug\net8.0\PracticeFile.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\bin\Debug\net8.0\PracticeFile.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\bin\Debug\net8.0\PracticeFile.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\bin\Debug\net8.0\PracticeFile.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\refint\PracticeFile.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\PracticeFile.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\PracticeFile\obj\Debug\net8.0\ref\PracticeFile.dll
