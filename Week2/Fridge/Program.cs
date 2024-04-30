@@ -8,6 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        string vegInput;
 
         Fridge fridge1 = new Fridge();
         Fridge fridge2 = new Fridge("Coca-Cola, Milk", "Carrots", "Grapes", "Mustard, Ranch, Hoisin", 35);
@@ -47,6 +48,20 @@ class Program
         System.Console.Write("Refrigerator 1 door is now closed. ");
         fridge1.DoorClosed();
 
+        System.Console.WriteLine("");
+
+        System.Console.WriteLine("What vegetable would you like to add to refrigerator 1?");
+        vegInput = Console.ReadLine();
+
+        fridge1.vegetable = vegInput;
+
+        System.Console.WriteLine("Refrigerator 1 now includes: "+ fridge1.vegetable + ".");
+
+        System.Console.WriteLine("For an updated inventory for all refrigerators, press enter.");
+        System.Console.WriteLine("Refrigerator 1 includes: " + fridge1);
+        System.Console.WriteLine("Refrigerator 2 includes: " + fridge2);
+        System.Console.WriteLine("Refrigerator 3 includes: " + fridge3);
     System.Console.WriteLine(""); //clean seperation at end of program
+
     }
 }
