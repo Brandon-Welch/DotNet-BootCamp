@@ -12,7 +12,7 @@ class Program
         Thread.Sleep(1500);
         RyanReverseString(); //pulls each character starting at the end individually?
         Thread.Sleep(1500);
-        MaxValueInArray(); //take numbers in array and returns highest (max) value
+        MaxValueInArray(); //take numbers in array and returns highest (max) value 
 
         System.Console.WriteLine("\n---End---\n"); //define end of program and leave a blank line after program and before cmd line
     }
