@@ -1,0 +1,24 @@
+Proposed Project: Banking System
+
+Users:
+2 Users
+1 Admin
+
+User UI:
+Login
+Menu
+Responses
+
+Admin UI:
+See Users
+Close Accounts
+
+Properties
+'total' = output
+'deposits' = input
+'withdrawals' = input
+'balance (balance = total + deposits - withdrawals) = output
+
+Additional: 
+Validation (loops?)
+Persist deposits into a DB

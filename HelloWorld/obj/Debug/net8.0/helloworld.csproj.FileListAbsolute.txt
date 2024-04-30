@@ -1,0 +1,14 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\bin\Debug\net8.0\helloworld.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\bin\Debug\net8.0\helloworld.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\bin\Debug\net8.0\helloworld.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\bin\Debug\net8.0\helloworld.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\bin\Debug\net8.0\helloworld.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\refint\helloworld.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\helloworld.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\helloworld\obj\Debug\net8.0\ref\helloworld.dll
