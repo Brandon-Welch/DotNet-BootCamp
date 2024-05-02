@@ -25,7 +25,7 @@ class Program
     {
         System.Console.WriteLine("-----Max Value in Array-----");
         int maxNum = 0;
-        int[] numberArray = { 1, 5, 9, 15, 72, 99, 107, 114, 32, 55, 4 };
+        int[] numberArray = { 1, 5, 9, 15, 72, 99, 107, 114, 32, 155, 4 };
                 
         foreach (int num in numberArray)
         {

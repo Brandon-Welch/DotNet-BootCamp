@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\bin\Debug\net8.0\RockGame.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\bin\Debug\net8.0\RockGame.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\bin\Debug\net8.0\RockGame.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\bin\Debug\net8.0\RockGame.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\bin\Debug\net8.0\RockGame.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\refint\RockGame.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\RockGame.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\RockGame\obj\Debug\net8.0\ref\RockGame.dll
