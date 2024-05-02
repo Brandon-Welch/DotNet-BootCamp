@@ -1,4 +1,4 @@
-class Cat : Animal, ICarnivore
+class Cat : Animal, ICarnivore, IAdorable
 {
     public int Value { get; set; }
 

@@ -2,6 +2,7 @@
     //we care more about what its supposed to do than how it actually does it
 
 using System;
+using System.Runtime.Intrinsics.Arm;
 
 class Program
 {
@@ -55,6 +56,24 @@ class Program
         System.Console.Write("This animal eats: ");
         b2.EatPlant();
         System.Console.WriteLine("----------");
+
+
+        Animal[] animals = new Animal[4];
+        animals[0] = d1;
+        animals[1] = c1;
+        animals[2] = b1;
+
+        ICarnivore[] carnivores = new ICarnivore[3];
+        carnivores[1] = d1;
+        carnivores[2] = c1;
+        //carnivores[3] = b1; //wont work since bunny isnt a carnivore (i.e not in the carnivore interface)
+
+        IAdorable[] adorables = new IAdorable[3];
+        adorables[0] = c1;
+        adorables[1] = b1;
+
+        TeddyBear bear = new();
+        adorables[2] = bear;
 
     }
 }

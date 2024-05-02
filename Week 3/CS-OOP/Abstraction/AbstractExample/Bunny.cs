@@ -1,6 +1,6 @@
 using System.Buffers;
 
-class Bunny : Animal, IHerbivore
+class Bunny : Animal, IHerbivore, IAdorable
 {
     public override void MakeSound()
     {
