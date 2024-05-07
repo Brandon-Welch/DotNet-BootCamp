@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\bin\Debug\net8.0\CodeClash.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\bin\Debug\net8.0\CodeClash.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\bin\Debug\net8.0\CodeClash.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\bin\Debug\net8.0\CodeClash.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\bin\Debug\net8.0\CodeClash.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\refint\CodeClash.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\CodeClash.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\CodeClash\obj\Debug\net8.0\ref\CodeClash.dll

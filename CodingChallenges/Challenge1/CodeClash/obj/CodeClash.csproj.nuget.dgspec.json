@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Projects\\Project1\\Project1.csproj": {}
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\CodingChallenges\\Challenge1\\CodeClash\\CodeClash.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Projects\\Project1\\Project1.csproj": {
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\CodingChallenges\\Challenge1\\CodeClash\\CodeClash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Projects\\Project1\\Project1.csproj",
-        "projectName": "Project1",
-        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Projects\\Project1\\Project1.csproj",
+        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\CodingChallenges\\Challenge1\\CodeClash\\CodeClash.csproj",
+        "projectName": "CodeClash",
+        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\CodingChallenges\\Challenge1\\CodeClash\\CodeClash.csproj",
         "packagesPath": "C:\\Users\\A140953\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\Projects\\Project1\\obj\\",
+        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\CodingChallenges\\Challenge1\\CodeClash\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A140953\\AppData\\Roaming\\NuGet\\NuGet.Config"
