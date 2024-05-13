@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\bin\Debug\net8.0\TempFolder.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\bin\Debug\net8.0\TempFolder.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\bin\Debug\net8.0\TempFolder.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\bin\Debug\net8.0\TempFolder.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\bin\Debug\net8.0\TempFolder.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\refint\TempFolder.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\TempFolder.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\TempFolder\obj\Debug\net8.0\ref\TempFolder.dll

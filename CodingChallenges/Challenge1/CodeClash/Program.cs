@@ -20,9 +20,52 @@ class Program
         //BankingBrandon(); //writeline should be OUTSIDE for loop
         //BankingRoss();
         //BankingCorey(); //used ternary instead of IF statment to shorten
+        //FirstTenMultiplesBrandon(); //stuck with trailing space
+        //FirstTenMultiplesRyan();
 
     }
 
+    public static void FirstTenMultiplesRyan()
+    {
+        // The input we need to print out 10 times - for its 10 multiples
+        int N = 21; //int.Parse(Console.ReadLine());
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+        //Loop 10 times
+        for(int i = 1; i <= 10; i++)
+        {
+            //Need to not print a last space.
+            if(i != 10)
+            Console.Write(N*i +  " ");
+            else
+            Console.Write(N*i);
+        }
+    }
+    public static void FirstTenMultiplesBrandon()
+    {
+        int N = 21; //int.Parse(Console.ReadLine());
+        int num = N;
+        for (int i = 1; i < N; i++)
+        {
+            if (N != 10)
+            {
+            System.Console.Write(num + " "); //would make a row    
+            num += N;
+            i++;
+            }
+
+            else
+            {
+            System.Console.Write(num); //would make a row    
+            num += N;
+            i++;
+            }
+        }
+
+
+    }
     public static void BankingCorey()
     //inputs:
     //initial balance *space* how many transactions (this example 100 3)

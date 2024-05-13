@@ -17,11 +17,73 @@ class Program
         //PalindromeUsingToCharAndReverse();
         //PalindromeUsingLength();
         //CharToASCII(); //<-Unable to interpret???????
+        //CharToInt1(); //To Lower - Ryans Example
+        //CharToInt2(); // Subtracting unicode value 
+        //CharToInt3(); // <-GetNumericValue & ToInt32
+        //PalindromeChallenge();
+        StringToSecretCode();
+
 
         System.Console.WriteLine("\n---End---\n"); //define end of program and leave a blank line after program and before cmd line
     }
 
+
+
+
+
+
     //Methods
+
+    public static void PalindromeChallenge() //needed to add using System.Linq;
+    {
+        string s = "Happy Birthday!"; //"RACECAR";
+        string reverseS = new string(s.Reverse().ToArray()); //Reverse: Inverts the order of the elements in a sequence //ToArray takes the char from the string
+        bool palindrome = s == reverseS;
+        System.Console.WriteLine(palindrome);
+        //return palindrome;
+    }
+    public static void StringToSecretCode()
+    {
+        string s = "AppleSauce";
+        string secretCode = ""; 
+        foreach (char c in s.ToLower()) //converts characters in string to lowercase
+        {
+            if (char.IsLetter(c)) // Indicates whether the specified Unicode character is categorized as a Unicode letter
+            {
+                int codeConverted = c - 'a' + 1; //this makes 'a' correspond to 1 otherwise a = 0
+                secretCode = secretCode + codeConverted.ToString("00"); //converts 1 to 01
+                
+            }
+        }
+        Console.WriteLine(secretCode);
+        //return secretCode;
+    }
+    public static int CharToInt2()
+    {
+        char ch = '5';
+        int intValue = ch - '1';
+        Console.WriteLine($"The integer value is: {intValue}");
+        return intValue;
+    }
+    public static int CharToInt1()
+    {
+        char c = 'A';
+        c = char.ToLower(c); //c = a = 97
+        int result = c - 'a' + 1;
+        int result2 = c - 'b' + 2;
+        System.Console.WriteLine("c (97) - 'a' (97) + 1 = " + result);
+        System.Console.WriteLine("c (97) - 'b' (98) + 2 = " + result2);
+        System.Console.WriteLine(c-1);
+        return result;
+    }
+    public static int CharToInt3()
+{
+    char input = 'a';
+    double temp = Char.GetNumericValue(input);
+    int result = Convert.ToInt32(temp);
+    System.Console.WriteLine(result);
+    return result;
+}
     public static void CharToASCII()
     {
         string? S = Console.ReadLine();
