@@ -22,9 +22,50 @@ class Program
         //BankingCorey(); //used ternary instead of IF statment to shorten
         //FirstTenMultiplesBrandon(); //stuck with trailing space
         //FirstTenMultiplesRyan();
+        //ReverseStringCharacters();
+        //ReverseStringCharactersJonathan();
 
     }
 
+    public static void ReverseStringCharactersJonathan()
+    {
+        //String coming in
+        string S = Console.ReadLine();  
+
+        //String to output
+        string R = "";
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+        //Foreach individual character in the string S...
+        foreach(char c in S)
+        {   
+            //Check it's case using Char class static methods...
+            if(Char.IsUpper(c)) //If it's uppercase, make it lowercase, add it to R
+                R += Char.ToLower(c);
+            else
+                R += Char.ToUpper(c); //Otherwise, if it's lowercase make it uppercase and add it to R
+        }
+
+        Console.WriteLine(R); //return that string used to hold the return
+    }
+    public static void ReverseStringCharacters()
+        {
+            
+            string S = "AppLe a DaY"; //"heLLo WoRld"; //Console.ReadLine();
+            string reverseS = "";
+
+            foreach (var letter in S)
+            {
+                if (char.ToLower(letter) != letter )
+                    reverseS += char.ToLower(letter);
+                else
+                    reverseS += char.ToUpper(letter);
+            }
+            Console.WriteLine("Original String: " + S);
+            Console.WriteLine("Reversed String: " + reverseS);
+        }
     public static void FirstTenMultiplesRyan()
     {
         // The input we need to print out 10 times - for its 10 multiples
