@@ -24,9 +24,106 @@ class Program
         //FirstTenMultiplesRyan();
         //ReverseStringCharacters();
         //ReverseStringCharactersJonathan();
+        //SumOfEvenAndOddNumbersJonathan();
+        //SumOfEvenAndOddNumbersRyan();
+        //MinutesDurationFormattedHHMM();
+        //ReturnProductAndSumOfConsIntgs();
+        //ReturnProductofStringToIng();
+
 
     }
 
+    public static void ReturnProductofStringToIng()
+    {
+        string _num = "4513"; //"23";
+
+        int product = 1;
+        foreach(char c in _num)
+        {
+            product *= c - '0';
+        }
+        
+        Console.WriteLine(product);
+    }
+    public static void ReturnProductAndSumOfConsIntgs()
+    {
+        int N = 5;
+        long product = 1;
+        long sum = 0;
+
+        for(int i = 1; i <= N; i++)
+        {
+            product *= i;
+            sum += i;
+
+        }
+    }
+    public static void MinutesDurationFormattedHHMM()
+    {
+        //input
+        string duration = "0:06"; // "14:06"; // "1:07"; // "13:05";
+
+        //split hours and minutes apart
+        string[] hours = duration.Split(':');
+
+        //take hours and convert to minutes
+        double hoursOnly = double.Parse(hours[0]);
+        hoursOnly = hoursOnly * 60;
+
+        //sum all minutes
+        double minsOnly = double.Parse(hours[1]);
+        double total = hoursOnly + minsOnly;
+
+        //print total seconds
+        Console.WriteLine(total);
+    }
+    public static void SumOfEvenAndOddNumbersRyan()
+    {
+        long n = long.Parse(Console.ReadLine());
+
+        //Track both values
+        long even = 0;
+        long odd = 0;
+
+        //Run a loop over all numbers. start at 1 (or 0) and go to N.
+        for(int i = 0; i <= n; i++)
+        {
+            //determine if even or odd.
+            if(i % 2 == 0)
+            {
+                even += i;
+            }
+            else
+            {
+                odd += i;
+            }
+        }
+
+        //Print out result.
+        Console.WriteLine(odd);
+        Console.WriteLine(even);
+
+    }
+    public static void SumOfEvenAndOddNumbersJonathan()
+    {
+        long n = long.Parse(Console.ReadLine());
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+        long evenSum = 0;
+        long oddSum = 0;
+        for(long i = 1; i <= n; i++)
+        {
+            if(i % 2 == 0)
+                evenSum += i;
+            else
+                oddSum += i;
+        }
+
+        Console.WriteLine(oddSum);
+        Console.WriteLine(evenSum);
+    }
     public static void ReverseStringCharactersJonathan()
     {
         //String coming in
