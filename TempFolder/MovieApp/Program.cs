@@ -1,33 +1,59 @@
 ﻿class Program
 {
-    static MovieService ms = new(); //moved this out of main method so it can be used in any of the methods and we dont have to pass this every single subsequent method
+    static AccountService accs = new(); //moved this out of main method so it can be used in any of the methods and we dont have to pass this every single subsequent method
     //static methods can only use other static members... since main method is static, we need to make the other methods static (fields, methods, etc)
 
     static void Main(string[] args)
     {
-        //Going to start off with the call to Main Menu still
+        //Display the Main Menu
         MainMenu();
     }
 
     private static void MainMenu()
     {
-        //Similar menu different options.
-        System.Console.WriteLine("Welcome to the Movie App!");
+        //Clear the console screen for a cleaner visual feel
+        Console.Clear();
+
+        //Add a pause after clearing before program starts to display
+        Thread.Sleep(750);
+
+        //MWelcome Message, will only show upon initial program launch
+        System.Console.WriteLine(@"                  _ _.-'`-._ _");
+        System.Console.WriteLine(@"                 ;.'_DotNet_'.;");
+        System.Console.WriteLine(@"      _________n.[__Bootcamp__].n_________");
+        System.Console.WriteLine(@"     |""__""___""__""||==||==||==||""__""___""__""|");
+        System.Console.WriteLine(@"     |'''''''''''||..||..||..||'''''''''''|");
+        System.Console.WriteLine(@"     |LI LI LI LI||LI||LI||LI||LI LI LI LI|");
+        System.Console.WriteLine(@"     |.. .. .. ..||..||..||..||.. .. .. ..|");
+        System.Console.WriteLine(@"     |LI LI LI LI||LI||LI||LI||LI LI LI LI|");
+        System.Console.WriteLine(@" ,,;;,;;;,;;;,;;;,;;;,;;;,;;;,;;,;;;,;;;,;;;;,,");
+        System.Console.WriteLine(@";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;");
+        System.Console.WriteLine("  Welcome to the Dotnet Bootcamp Banking App!");
         bool keepGoing = true;
+
         while (keepGoing)
         {
-            System.Console.WriteLine("Please Pick an Option Down Below:");
+            //Add a pause before displaying Main Menu
+            Thread.Sleep(1500);
+
+            //Main Menu
+            System.Console.WriteLine("\nWhat would you like to do?");
             System.Console.WriteLine("=================================");
-            System.Console.WriteLine("[1] View All Available Movies");
-            System.Console.WriteLine("[2] Checkout Movie");
-            System.Console.WriteLine("[3] Checkin Movie");
-            System.Console.WriteLine("[4] View Checked out Movies");
+            System.Console.WriteLine("[1] View My Account(s)");
+            System.Console.WriteLine("[2] Deposit into an Account");
+            System.Console.WriteLine("[3] Withdraw from Account");
+            System.Console.WriteLine("[4] Transfer between Accounts");
+            //System.Console.WriteLine("[4] View Checked out Accounts"); //if using later, update validation to 4
             System.Console.WriteLine("[0] Quit");
             System.Console.WriteLine("=================================");
 
+            //Allow user to enter a selection
+            System.Console.Write("Enter your selection: ");
             int input = int.Parse(Console.ReadLine() ?? "0");
-            //Same Validation method copied over
+            
+            //Validate user selection
             input = ValidateCmd(input, 4);
+            System.Console.WriteLine();
 
             //Extracted to method - uses switch case to determine what to do next.
             keepGoing = DecideNextOption(input);
@@ -40,28 +66,34 @@
         {
             case 1:
                 {
-                    RetrievingAvailableMovies();
+                    RetrievingAvailableAccounts();
                     break;
                 }
             case 2:
                 {
-                    CheckOutMovie();
+                    DepositIntoAccount();
                     break;
                 }
             case 3:
                 {
-                    CheckInMovie();
+                    WithdrawFromAccount();
                     break;
                 }
             case 4:
                 {
-                    RetrievingCheckedOutMovies();
+                    TransferBetweenAccounts();
                     break;
                 }
+            // case 4:
+            //     {
+            //         RetrievingCheckedOutAccounts();
+            //         break;
+            //     }
             case 0:
             default:
                 {
-                    //If option 0 or anything else -> set keepGoing to false.
+                    //If option 0 OR default (anything else) -> set keepGoing to false and end program.
+                    System.Console.WriteLine("Thanks for trusting Dotnet Boocamp with all your banking needs! Have a great day!\n");
                     return false;
                 }
         }
@@ -69,87 +101,173 @@
         return true;
     }
 
-    private static void RetrievingAvailableMovies()
+    private static void RetrievingAvailableAccounts()
     {
-        //use our service methods now.
-        List<Movie> movies = ms.GetAvailableMovies();
+        //Create list from Available Accounts
+        List<Account> accounts = accs.GetAvailableAccounts();
 
-        System.Console.WriteLine("=== List of Available Movies ===");
-        foreach (Movie m in movies)
+        //Display Available Accounts
+        System.Console.WriteLine("========= Your Accounts =========");
+        foreach (Account a in accounts)
         {
-            System.Console.WriteLine(m);
+            System.Console.WriteLine(a);
         }
         System.Console.WriteLine("=================================");
+        
+        //Insert Pause for reading accounts longer.
+        Thread.Sleep(1500);
     }
 
-    private static void CheckOutMovie()
+    private static void TransferBetweenAccounts()
     {
-        //Ew, What is that?
+        //Start by withdrawing from one account
+        System.Console.WriteLine("What account would you like to transfer from?");
         while (true)
         {
-            //Pick a movie to Check out.
-            Movie? movie = PromptUserForMovie();
+            //Pick an account
+            Account account = PromptUserForAccount();
+
             //Adding a way out...
-            if (movie == null) return; //Leaves method.
-            //Check it out.
-            movie = ms.CheckOut(movie);
-            if (movie != null)
+            if (account == null) return; //Leaves method.
+            
+            //Withdraw from Account
+            account = accs.TransferWithdrawl(account);
+            // if (account != null)
+            // {
+            //     System.Console.WriteLine("\nAccount withdrawl successful. Your new balance is: $" + account.Balance); break; // <-- :O
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Please Try Another Account.");
+            // }
+            if(account == null)
+                {
+                    System.Console.WriteLine("\nPlease Try Another Account.");
+                }
+                else
+                {
+                        //transfer to new account
+                    while (true)
+                    {
+                        System.Console.WriteLine("\nWhat account would you like to transfer to?");
+                        //Pick an account
+                        account = PromptUserForAccount();
+                        
+                        //Adding a way out...
+                        if (account == null) return; //Leaves method.
+                        
+                        //Deposit into account
+                        account = accs.TransferDeposit(account);
+                        // if (account != null)
+                        // {
+                        //     System.Console.WriteLine("\nAccount deposit successful. Your new balance is: $" + account.Balance); break; // <-- :O
+                        // }
+                        // else
+                        // {
+                        //     System.Console.WriteLine("Please Try Another Account.");
+                        // }
+                        if(account == null)
+                        {
+                            System.Console.WriteLine("\nPlease Try Another Account.");
+                        }
+                        {
+                            break;
+                        }
+                    }
+                    break;
+                }
+
+
+        }
+    }
+    private static void DepositIntoAccount()
+    {
+        while (true)
+        {
+            //Pick an account
+            Account account = PromptUserForAccount();
+            
+            //Adding a way out...
+            if (account == null) return; //Leaves method.
+            
+            //Deposit into account
+            account = accs.Deposit(account);
+            // if (account != null)
+            // {
+            //     System.Console.WriteLine("\nAccount deposit successful. Your new balance is: $" + account.Balance); break; // <-- :O
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Please Try Another Account.");
+            // }
+            if(account == null)
             {
-                System.Console.WriteLine("Movie Checked Out: " + movie); break; // <-- :O
+                System.Console.WriteLine("Please Try Another Account.");
             }
             else
             {
-                System.Console.WriteLine("Please Try Another Movie.");
+                break;
             }
         }
 
     }
 
-    private static void CheckInMovie()
+    private static void WithdrawFromAccount()
     {
-        //Ew, What is that?
         while (true)
         {
-            //Pick a movie to Check in.
-            Movie? movie = PromptUserForMovie();
+            //Pick an account
+            Account account = PromptUserForAccount();
+
             //Adding a way out...
-            if (movie == null) return; //Leaves method.
-            //Check it in
-            movie = ms.CheckIn(movie);
-            if (movie != null)
+            if (account == null) return; //Leaves method.
+            
+            //Withdraw from Account
+            account = accs.Withdrawl(account);
+            // if (account != null)
+            // {
+            //     System.Console.WriteLine("\nAccount withdrawl successful. Your new balance is: $" + account.Balance); break; // <-- :O
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Please Try Another Account.");
+            // }
+            if(account == null)
             {
-                System.Console.WriteLine("Movie Checked in: " + movie); break; // <-- :O
+                System.Console.WriteLine("Please Try Another Account.");
             }
             else
             {
-                System.Console.WriteLine("Please Try Another Movie.");
+                break;
             }
         }
     }
 
-    private static void RetrievingCheckedOutMovies()
+    //Unused Method at this time
+    private static void RetrievingCheckedOutAccounts()
     {
-        System.Console.WriteLine("Sorry the code for this method is in another castle.");
+        System.Console.WriteLine("\nSorry the code for this method is in another castle.");
     }
 
 
 
-    //Same Helper Methods
-    private static Movie? PromptUserForMovie()
+    //Helper Methods
+    private static Account PromptUserForAccount()
     {
-        //Now we have input validation
-        Movie? retrievedMovie = null;
-        while (retrievedMovie == null)
+        //Input Validation for Selecting Account
+        Account retrievedAccount = null;
+        while (retrievedAccount == null)
         {
-            System.Console.WriteLine("Please enter a Movie ID (0 to Exit Process): ");
+            System.Console.WriteLine("Please enter an Account ID (0 to Exit Process): ");
+            System.Console.Write("Account ID: ");
             int input = int.Parse(Console.ReadLine() ?? "0");
             //Okay I want to add a "way out" for anytime they want to exist the process.
             if (input == 0) return null;
 
-            retrievedMovie = ms.GetMovie(input);    // <-- add a trivial service method here.
+            retrievedAccount = accs.GetAccount(input);    // <-- add a trivial service method here.
         }
-        //Leaving the loop indicates that they have successfully picked a valid movie.
-        return retrievedMovie;
+        //Leaving the loop indicates that they have successfully picked a valid account.
+        return retrievedAccount;
     }
 
     //Generic Command Input Validator - assume 1-maxOption are the number of options. and 0 is an option to quit.
@@ -157,7 +275,8 @@
     {
         while (cmd < 0 || cmd > maxOption)
         {
-            System.Console.WriteLine("Invalid Command - Please Enter a command 1-" + maxOption + "; or 0 to Quit");
+            System.Console.WriteLine("\n*Invalid Selection - Please Enter a selection 1-" + maxOption + "; or 0 to Quit");
+            System.Console.Write("Enter your selection: ");
             cmd = int.Parse(Console.ReadLine() ?? "0");
         }
 

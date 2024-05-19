@@ -13,12 +13,12 @@ class UserRepo
     UserStorage userStorage = new();
 
 
-    public User AddUser(User u) //m is referencing the actual user object, so if we return m, we are returning the actual user object
+    public User AddUser(User u) //u is referencing the actual user object, so if we return u, we are returning the actual user object
     {
         //We need to first ensure the user being added has a correct ID
         //Assume it doesnt and force it to have a correct ID using our idCounter (comes from the userStorage Utility)
 
-        u.Id = userStorage.idCounter; //m from the Adduser(user m) above
+        u.Id = userStorage.idCounter; //m from the Adduser(user u) above
         userStorage.idCounter++; //increment for next ID to be next in line
 
         //Add the user to our collection
@@ -26,12 +26,9 @@ class UserRepo
         return u;
     }
 
-        //THIS IS A NEW METHOD!
-    //No Parameters because...get everything is get everything. No options to choose.
     public List<User> GetAllUsers()
     {
-        //I am choosing to return a List because that is a much more common collection to
-        //work with. It does mean I have to do a little bit of work here - but its not bad.
+        //Returns all Users in a List
         return userStorage.users.Values.ToList();
     }
 
@@ -48,8 +45,6 @@ class UserRepo
             System.Console.WriteLine("Sorry, no user exists with that ID. Please try again.");
             return null; //Ryans option
         }
-
-        //return userStorage.users[id]; //Alternative (shortened) approad to the broken down steps above
     }
 
     public User UpdateUser(User updatedUser)
@@ -74,7 +69,7 @@ class UserRepo
         
         if (didRemove == true)
         {
-            //since we declared the full userw in the parameters (user m), we stored all the user variables so we are able to rturn the user even after removed
+            //since we declared the full user in the parameters (user u), we stored all the user variables so we are able to rturn the user even after removed
             return u;
         }
         

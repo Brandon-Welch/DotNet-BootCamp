@@ -1,9 +1,9 @@
 class UserStorage
 {
     public Dictionary<int, User> users;
-    public int idCounter = 1; //normall start at 1 and then future is idCounter++
+    public int idCounter = 1; //normally start at 1 and then future is idCounter++
 
-    //Making this constructor give us some pre-loaded Movies to work with.
+    //Making this constructor give us some pre-loaded Accounts to work with.
     public UserStorage()
     {
         User user1 = new User(idCounter, "BWelch", "pass1", "user"); idCounter++;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 5\\Databases\\MovieApp\\MovieApp.csproj": {}
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\TempFolder\\MovieApp\\MovieApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 5\\Databases\\MovieApp\\MovieApp.csproj": {
+    "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\TempFolder\\MovieApp\\MovieApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 5\\Databases\\MovieApp\\MovieApp.csproj",
+        "projectUniqueName": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\TempFolder\\MovieApp\\MovieApp.csproj",
         "projectName": "MovieApp",
-        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 5\\Databases\\MovieApp\\MovieApp.csproj",
+        "projectPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\TempFolder\\MovieApp\\MovieApp.csproj",
         "packagesPath": "C:\\Users\\A140953\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\Week 5\\Databases\\MovieApp\\obj\\",
+        "outputPath": "C:\\Users\\A140953\\Documents\\RevatureTraining\\DotNetBootCamp\\DotNetBootCamp\\TempFolder\\MovieApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A140953\\AppData\\Roaming\\NuGet\\NuGet.Config"
