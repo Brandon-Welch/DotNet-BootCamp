@@ -1,0 +1,39 @@
+Proposed Project: Banking System
+
+Users:
+2 Users
+1 Admin
+
+User UI:
+Login
+Menu
+Responses
+
+Admin UI:
+See Users
+Close Accounts
+
+Properties
+'total' = output
+'deposits' = input
+'withdrawals' = input
+'balance (balance = total + deposits - withdrawals) = output
+
+Additional: 
+Validation (loops?)
+Persist deposits into a DB or possibly just a txt via FileIO?
+
+
+________________________________
+Notes:
+[4:11 PM] Ryan Schlientz
+Project  Proposal looks good. I would say you can reduce/remove admin needs for now. Focus on one role, users. 
+Focus on just deposit, withdraw, etc. The properties you have listed are a bit perplexing. 
+What I might consider for the scope of this project....is just store a balance. 
+If you wanted to track all deposits and withdrawals, it'd make sense to log into a Transaction Table (aka another Model), but you could just not for this project.
+
+[4:37 PM] Ryan Schlientz
+To those last questions I’d say yes. (loops for more transactions)
+But balance is a state. Deposit and withdraw are an action. So they are just methods that modify the current balance to a new value. 
+You should loop it long term to ask them if they’d like to perform another transaction. 
+And you should have multiple Users. Just not user types.
