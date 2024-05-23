@@ -29,10 +29,108 @@ class Program
         //MinutesDurationFormattedHHMM();
         //ReturnProductAndSumOfConsIntgs();
         //ReturnProductofStringToIng();
+        //RockPaperScissorsBrandon();
+        //RockPaperScissorsRon();
+        //RockPaperScissorsAaron();
 
 
     }
 
+    public static void RockPaperScissorsAaron()
+    {
+        string[] inputs = Console.ReadLine().Split(' ');
+        string call1 = inputs[0];
+        string call2 = inputs[1];
+
+        if(call1==call2)
+        Console.WriteLine("DRAW");
+        else if(call1=="ROCK" && call2=="SCISSORS" || call1=="SCISSORS" && call2=="PAPER" || call1=="PAPER" && call2=="ROCK")
+        Console.WriteLine("PLAYER1");
+        else 
+        Console.WriteLine("PLAYER2");
+    }
+    public static void RockPaperScissorsRon()
+    {
+        string[] inputs = Console.ReadLine().Split(' ');
+        string call1 = inputs[0];
+        string call2 = inputs[1];
+        string answer = "";
+        if (call1 == call2)
+            answer = "DRAW";
+        else if (call1 == "PAPER" && call2 == "ROCK")
+            answer = "PLAYER1";
+        else if (call1 == "SCISSORS" && call2 == "PAPER")
+            answer = "PLAYER1";
+        else if (call1 == "ROCK" && call2 == "SCISSORS")
+            answer = "PLAYER1";
+        else
+            answer = "PLAYER2";
+
+        // Write an answer using Console.WriteLine()
+        // To debug: Console.Error.WriteLine("Debug messages...");
+
+        Console.WriteLine(answer);
+    }
+    public static void RockPaperScissorsBrandon()
+    {
+        string[] inputs = ["ROCK", "PAPER"]; //Console.ReadLine().Split(' ');
+        string call1 = inputs[0]; //PLAYER1
+        string call2 = inputs[1]; //PLAYER2
+
+        if (call1 == "ROCK")
+                {
+                    if (call2 == "ROCK")
+                    {
+                        Console.WriteLine("DRAW");                     
+                    }
+                    else if (call2 == "PAPER")
+                    {
+                        Console.WriteLine("PLAYER2");
+
+                    }
+                    else //Scissors
+                    {
+                        Console.WriteLine("PLAYER1");
+                    }
+
+                }
+
+                else if (call1 == "SCISSORS")
+                {
+                    if (call2 == "ROCK")
+                    {
+                        Console.WriteLine("PLAYER2");
+
+                    }
+                    else if (call2 == "PAPER")
+                    {
+                        Console.WriteLine("PLAYER1");
+
+                    }
+                    else //SCISSORS
+                    {
+                        Console.WriteLine("DRAW");                
+                    }
+                }
+                else if (call1 == "PAPER")
+                {
+                    if (call2 == "ROCK")
+                    {
+                        Console.WriteLine("PLAYER1");
+
+                    }
+                    else if (call2 == "PAPER")
+                    {
+                        Console.WriteLine("DRAW");
+
+                    }
+                    else //SCISSORS
+                    {
+                        Console.WriteLine("PLAYER2");
+
+                    }
+                }
+    }
     public static void ReturnProductofStringToIng()
     {
         string _num = "4513"; //"23";
