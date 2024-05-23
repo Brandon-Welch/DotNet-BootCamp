@@ -1,63 +1,59 @@
 class UserService
 {
-    /*
-    Services:
-        - Register
-        -Log In
-    */
+    UserRepo ur;
 
-    UserRepo ur = new();
-
-
-    public User RegisterUser(User u)
+    public UserService(UserRepo ur)
     {
-        //let not let them register if the role is anything other than "user"
-        if(u.Role != "user")
+        this.ur = ur;
+    }
+
+    //Register
+    public User? Register(User u)
+    {
+        //let's not let them register if the role is anything other than "user"
+        if (u.Role != "user")
         {
-            //reject the user from registering
-            System.Console.WriteLine("We are unable to register you at this time due to invalid role. Please try again.");
+            //reject them
+            System.Console.WriteLine("Invalid Role - Please try again!");
             return null;
         }
 
-        //lets not let them register if the username is already taken
-        //need to first get all users
-        List<User> allUsers = ur.GetAllUsers();
-        //then check if new username matches any of the usernames on all of the users
-        foreach(User user in allUsers)
+        //let's not let them register if the username is already taken! :o
+        //Get all users
+        List<User> allUsers = ur.GetAllUsers() ?? [];
+        //Check if our new username matches any of the usernames on all those users.
+        foreach (User user in allUsers)
         {
-            if(user.UserName == u.UserName)
+            if (user.Username == u.Username)
             {
-                System.Console.WriteLine("Username already taken. Please try again.");
-                return null; //reject them
+                System.Console.WriteLine("Username already taken! - Please try again!");
+                return null;//reject them
             }
         }
-
-        //IF we make it this far, we are saying the role AND username are both good to register with
-            //Using same returns as below.
-
-        //If we dont care about any validation - this is but a simple/trivial service method
+        //IF we make it this far, then we are saying that the role is good to go 
+        //and the username is good to go.
         return ur.AddUser(u);
     }
 
-
-    //Loing
-    public User LoginUser(string username, string password)
+    //Login
+    public User? Login(string username, string password)
     {
         //Get all users
-        List<User> allUsers = ur.GetAllUsers();
-        
-        //check each one to see if we find a match
-        foreach(User user in allUsers)
+        List<User> allUsers = ur.GetAllUsers() ?? [];
+
+        //check each one to see if we find a match.
+        foreach (User user in allUsers)
         {
-            if(user.UserName == username && user.Password == password)
+            //If matching username and password, they 'login' -> return that user
+            if (user.Username == username && user.Password == password)
             {
-                return user; //Login - > by returning the user it indicates successful
+                //Yay! Login!
+                return user; //us returning the user will indicate success.
             }
         }
-        
-        //If we make it this far (ran through all users in the IF with no match), we need to rejct outside the foreach
-        System.Console.WriteLine("Username or Password does not match. Please try again");
+
+        //If we make it this far - we didnt find a match! Oh no!
+        System.Console.WriteLine("Invalid Username / Password combo! Please Try Again!");
         return null; //reject the login
     }
-   
 }

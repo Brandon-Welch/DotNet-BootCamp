@@ -1,18 +1,61 @@
-﻿class Program
+﻿
+class Program
 {
-    static MovieService ms = new(); //moved this out of main method so it can be used in any of the methods and we dont have to pass this every single subsequent method
-    //static methods can only use other static members... since main method is static, we need to make the other methods static (fields, methods, etc)
+    static MovieService ms;
+    static UserService us;
+    static User? currentUser = null;
 
     static void Main(string[] args)
     {
-        //Going to start off with the call to Main Menu still
-        MainMenu();
+        //Strings with an @ in front will provide you additional flexibility when creating strings.
+        string path = @"C:\Users\A140953\OneDrive - Government Employees Insurance Company\Documents\RevatureTraining\DotNetBootCamp\Connection Strings\MovieAppDBcs.txt";
+        string connectionString = File.ReadAllText(path);
+
+        UserRepo ur = new(connectionString);
+        us = new(ur);
+
+        MovieRepo mr = new(); // <-- we'll need to add the connection string in the near future
+        ms = new(mr);
+
+        //Lets just quickly test the Repo all by itself - and then if it works
+        //we can assume nothing else changed -> therefore it should integrate cleanly into the app.
+
+        //Test Get 1, Update and Delete.
+        // User u = ur.GetUser(13) ?? new();
+        // System.Console.WriteLine("Get User: " + u);
+        // u.Password += "000";
+        // System.Console.WriteLine("Updated User: " + ur.UpdateUser(u));
+        // System.Console.WriteLine("Deleted User: " + ur.DeleteUser(u));
+
+
+        InitMenu();
+    }
+
+    private static void InitMenu()
+    {
+        System.Console.WriteLine("Welcome to the Movie App!");
+        bool keepGoing = true;
+        while (keepGoing)
+        {
+            System.Console.WriteLine("Please Pick an Option Down Below:");
+            System.Console.WriteLine("=================================");
+            System.Console.WriteLine("[1] Login");
+            System.Console.WriteLine("[2] Register");
+            System.Console.WriteLine("[0] Quit");
+            System.Console.WriteLine("=================================");
+
+            int input = int.Parse(Console.ReadLine() ?? "0");
+            //Same Validation method copied over
+            input = ValidateCmd(input, 2);
+
+            keepGoing = DecideInitOption(input); //Slightly different method.
+        }
     }
 
     private static void MainMenu()
     {
-        //Similar menu different options.
-        System.Console.WriteLine("Welcome to the Movie App!");
+        System.Console.WriteLine("Welcome Back, " + currentUser?.Username);
+        //Now represents that they want to keep going but also, havent selected Logout yet.
         bool keepGoing = true;
         while (keepGoing)
         {
@@ -22,7 +65,7 @@
             System.Console.WriteLine("[2] Checkout Movie");
             System.Console.WriteLine("[3] Checkin Movie");
             System.Console.WriteLine("[4] View Checked out Movies");
-            System.Console.WriteLine("[0] Quit");
+            System.Console.WriteLine("[0] Logout");
             System.Console.WriteLine("=================================");
 
             int input = int.Parse(Console.ReadLine() ?? "0");
@@ -32,6 +75,26 @@
             //Extracted to method - uses switch case to determine what to do next.
             keepGoing = DecideNextOption(input);
         }
+
+        //end of loop means keepGoing = false -> Logout
+        currentUser = null;
+    }
+
+    private static bool DecideInitOption(int input)
+    {
+        switch (input)
+        {
+            case 1:
+                Login(); break;
+            case 2:
+                Register(); break;
+            case 0:
+            default:
+                //If option 0 or anything else -> set keepGoing to false.
+                return false;
+        }
+
+        return true;
     }
 
     private static bool DecideNextOption(int input)
@@ -39,34 +102,67 @@
         switch (input)
         {
             case 1:
-                {
-                    RetrievingAvailableMovies();
-                    break;
-                }
+                RetrievingAvailableMovies(); break;
             case 2:
-                {
-                    CheckOutMovie();
-                    break;
-                }
+                CheckoutMovie(); break;
             case 3:
-                {
-                    CheckInMovie();
-                    break;
-                }
+                CheckinMovie(); break;
             case 4:
-                {
-                    RetrievingCheckedOutMovies();
-                    break;
-                }
+                RetrievingCheckedOutMovies(); break;
             case 0:
             default:
-                {
-                    //If option 0 or anything else -> set keepGoing to false.
-                    return false;
-                }
+                //If option 0 or anything else -> set keepGoing to false.
+                return false;
         }
 
         return true;
+    }
+
+
+    private static void Register()
+    {
+        System.Console.WriteLine("Please Enter a New Username: ");
+        string username = Console.ReadLine() ?? "";
+        //Could Add some validation here to loop if Username is empty or taken.
+
+        System.Console.WriteLine("Please Enter a New Password: ");
+        string password = Console.ReadLine() ?? "";
+        //Could Add some validation here to loop if Password is empty or not long enough.
+
+        //Lets not set an ID and assume their Role to be 'user'
+        //My Register method chose a different tactic of passing in the whole User
+        User? newUser = new(0, username, password, "user");
+        newUser = us.Register(newUser); //should return the new User.
+        if (newUser != null)
+        {
+            System.Console.WriteLine("New User Registered!");
+        }
+        else
+        {
+            System.Console.WriteLine("Registration Failed! Please Try Again!");
+        }
+    }
+
+    private static void Login()
+    {
+        while (currentUser == null)
+        {
+            System.Console.WriteLine("Please Enter Your Username: ");
+            string username = Console.ReadLine() ?? "";
+
+            System.Console.WriteLine("Please Enter Your Password: ");
+            string password = Console.ReadLine() ?? "";
+
+            //Setting the currentUser variable signifies Logging in. If Login() fails it will remain null.
+            currentUser = us.Login(username, password);
+            if (currentUser == null)
+                System.Console.WriteLine("Login Failed. Please Try Again.");
+        }
+
+        //Now that they are logged in -> send them to Main Menu.
+        MainMenu();
+        //When this MainMenu ends, so does this calling of Login() which means go
+        //back to InitMenu().
     }
 
     private static void RetrievingAvailableMovies()
@@ -82,7 +178,7 @@
         System.Console.WriteLine("=================================");
     }
 
-    private static void CheckOutMovie()
+    private static void CheckoutMovie()
     {
         //Ew, What is that?
         while (true)
@@ -92,7 +188,7 @@
             //Adding a way out...
             if (movie == null) return; //Leaves method.
             //Check it out.
-            movie = ms.CheckOut(movie);
+            movie = ms.Checkout(movie);
             if (movie != null)
             {
                 System.Console.WriteLine("Movie Checked Out: " + movie); break; // <-- :O
@@ -105,7 +201,7 @@
 
     }
 
-    private static void CheckInMovie()
+    private static void CheckinMovie()
     {
         //Ew, What is that?
         while (true)
@@ -115,7 +211,7 @@
             //Adding a way out...
             if (movie == null) return; //Leaves method.
             //Check it in
-            movie = ms.CheckIn(movie);
+            movie = ms.Checkin(movie);
             if (movie != null)
             {
                 System.Console.WriteLine("Movie Checked in: " + movie); break; // <-- :O
@@ -131,7 +227,6 @@
     {
         System.Console.WriteLine("Sorry the code for this method is in another castle.");
     }
-
 
 
     //Same Helper Methods

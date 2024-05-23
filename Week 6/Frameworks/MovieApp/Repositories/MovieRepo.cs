@@ -1,32 +1,49 @@
 class MovieRepo
 {
-    //This class is in the Data Access | Repository Layer of our application
-    //Solely responsible for any data access and management centered around our movie object
+    /*
+    This class is in the Data Access / Repository Layer of our application.
+    So it solely responsible for any data access and management centered
+    around our Movie Object.
 
-    //4 major operations we would like ot manage in this location
-        //CRUD Operations - most basic concepts of what you would like ot do with data
-            //C - Create //in movieStorage.cs Dictionary
-            //R - Read/Retreive / in Program.cs app
-            //U - Update
-            //D - Delete
+    4 Major Operations we'd like to manage in this location.
+        - CRUD Operations
+        - C - Create
+        - R - Read
+        - U - Update
+        - D - Delete
+    */
 
     MovieStorage movieStorage = new();
 
 
-    public Movie AddMovie(Movie m) //m is referencing the actual Movie object, so if we return m, we are returning the actual Movie object
+    public Movie AddMovie(Movie m)
     {
-        //We need to first ensure the movie being added has a correct ID
-        //Assume it doesnt and force it to have a correct ID using our idCounter (comes from the MovieStorage Utility)
+        //We need first ensure that the movie being added has a correct ID.
+        //Assume it doesnt...and force it to have a correct ID using our idCounter.
+        m.Id = movieStorage.idCounter++; //incrementing the value afterwards, to prep it for the next time it's needed.
 
-        m.Id = movieStorage.idCounter; //m from the AddMovie(Movie m) above
-        movieStorage.idCounter++; //increment for next ID to be next in line
-
-        //Add the movie to our collection
-        movieStorage.movies.Add(m.Id, m); //Movie.Id, Movie
+        //Add the movie into our collection.
+        movieStorage.movies.Add(m.Id, m);
         return m;
     }
 
-        //THIS IS A NEW METHOD!
+    public Movie? GetMovie(int id)
+    {
+        // Alternative approach that breaks each step down.
+        if (movieStorage.movies.ContainsKey(id))
+        {
+            Movie selectedMovie = movieStorage.movies[id];
+            return selectedMovie;
+            // return movieStorage.movies[id];
+        }
+        else
+        {
+            System.Console.WriteLine("Invalid Movie ID - Please Try Again");
+            return null;
+        }
+    }
+
+    //THIS IS A NEW METHOD!
     //No Parameters because...get everything is get everything. No options to choose.
     public List<Movie> GetAllMovies()
     {
@@ -35,54 +52,40 @@ class MovieRepo
         return movieStorage.movies.Values.ToList();
     }
 
-    public Movie GetMovie(int id) //ID is the KEY in our dictionary
-    {
-        //We need to retrieve (return) the movie - in our case, we are using the unique identifier i.e. ID which is our key
-        if (movieStorage.movies.ContainsKey(id))
-        {
-            Movie selectedMovie = movieStorage.movies[id];
-            return selectedMovie;
-        }
-        else
-        {
-            System.Console.WriteLine("Sorry, no movie exists with that ID. Please try again.");
-            return null; //Ryans option
-        }
 
-        //return movieStorage.movies[id]; //Alternative (shortened) approad to the broken down steps above
-    }
-
-    public Movie UpdateMovie(Movie updatedMovie)
+    public Movie? UpdateMovie(Movie updatedMovie)
     {
+        //Assuming that the ID is consistent with an ID that exists
+        //then we just have to update the value (aka Movie) for said key (ID) within the Dictionary.
         try
         {
-            //Assuming that the ID is consistent with an ID that exists, we just have to update the value (aka Movie) for said ID (key) within the dictionary
-            movieStorage.movies[updatedMovie.Id] = updatedMovie; //movieStorage.movies accesses the dictionary then need to specify the property you want
-            return updatedMovie;   
+            movieStorage.movies[updatedMovie.Id] = updatedMovie;
+            //I choose to send the updated movie back as a "response-feedback" system.
+            //"Here is me telling you that I have updated the storage with this movie I send back to you"
+            return updatedMovie;
         }
-
-        catch(Exception e)
+        catch (Exception)
         {
-            System.Console.WriteLine("Sorry, no movie exists with that ID. Please try again.");
+            System.Console.WriteLine("Invalid Movie ID - Please Try Again");
             return null;
         }
     }
-    public Movie DeleteMovie(Movie m) //changing parameter so we can display which movie was deleted
+
+    public Movie? DeleteMovie(Movie m)
     {
-        //IF we have the ID > simply Remove it from storage
+        //If we have the ID -> then simply Remove it from storage
         bool didRemove = movieStorage.movies.Remove(m.Id);
-        
-        if (didRemove == true)
+
+        if (didRemove)
         {
-            //since we declared the full moview in the parameters (Movie m), we stored all the movie variables so we are able to rturn the movie even after removed
+            //now we will return the movie that got deleted.
             return m;
         }
-        
         else
         {
-            System.Console.WriteLine("Sorry, no movie exists with that ID. Please try again.");
+            System.Console.WriteLine("Invalid Movie ID - Please Try Again");
             return null;
         }
-        
     }
+
 }
