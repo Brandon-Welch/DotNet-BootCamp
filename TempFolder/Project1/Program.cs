@@ -145,6 +145,8 @@ class Program
                 Thread.Sleep(2000);
             }
         */
+
+
         //Prompt User for login info
         System.Console.WriteLine("\nPlease enter your username:");
         System.Console.Write("Username: ");
