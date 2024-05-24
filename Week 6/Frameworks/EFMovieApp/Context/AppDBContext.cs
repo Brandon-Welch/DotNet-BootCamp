@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 class AppDBContext:DbContext
 {
     public DbSet<User> Users { get; set; }
+    public DbSet<Movie> Movies { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -11,5 +12,9 @@ class AppDBContext:DbContext
         optionsBuilder.UseSqlServer(connectionString);
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder))
+    {
+        modelBuilder.Entity<Movie>().HasOne(m => m.Renter).;
+    }
 
 }
