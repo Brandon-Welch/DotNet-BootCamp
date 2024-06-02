@@ -32,10 +32,30 @@ class Program
         //RockPaperScissorsBrandon();
         //RockPaperScissorsRon();
         //RockPaperScissorsAaron();
+        //PossibleThreeDigitPassword();
 
 
     }
 
+    public static void PossibleThreeDigitPassword()
+    {
+        /*
+        You want to make a 4 digit passowrd, but you have the follwing rules:
+        -The first digit must be between 0 and 'a'
+        -The second digit must be between 0 and 'b'
+        -The third digit must be between 0 and 'c'
+        In how many different ways can you create your password?
+        Constraints: 0 <= a,b,c <= 9
+        */
+        string[] inputs = Console.ReadLine().Split(' '); //6 6 4
+        int a = int.Parse(inputs[0]);
+        int b = int.Parse(inputs[1]);
+        int c = int.Parse(inputs[2]);
+
+        //Consider asking yourself if the number was <make up a number between 0-9>, how many options does that digit have?
+        int total = (a+1)*(b+1)*(c+1);
+        Console.WriteLine(total); //245
+    }
     public static void RockPaperScissorsAaron()
     {
         string[] inputs = Console.ReadLine().Split(' ');
