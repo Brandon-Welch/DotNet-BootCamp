@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeClash")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c28a81d035f2f7a5a9c612c0f52e4f0a3a6d622f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94d4beebba3975094c42b9c92133a00822babb62")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeClash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeClash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,6 +18,22 @@ namespace EFCoreExample.Controllers
             _context = context;
         }
 
+        [HttpPost]
+        public ActionResult<CategoryDTO> PostCategory(CategoryDTO categoryDto)
+        {
+            var category = new Category
+            {
+                Name = categoryDto.Name,
+                Products = new List<Product>()
+            };
+
+            _context.Categories.Add(category);
+            _context.SaveChanges();
+
+            return Created();
+            //return CreatedAtAction(nameof(GetCategories), new { id = category.CategoryId }, categoryDto);
+        }
+        /*
         //Get All Categories
         [HttpGet]
         public ActionResult<IEnumerable<CategoryDTO>> GetCategories()
@@ -83,5 +99,6 @@ namespace EFCoreExample.Controllers
 
             return Ok();
         }
+        */
     }
 }
