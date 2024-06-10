@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <style>
+        p{
+            font-size: xx-large;
+            font-family: 'Frankling Gothic Mediaum', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+        }
+        .intro{
+            color: red;
+            font-size: 60 px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 id="main-header">Welcome to My Profile</h1>
+
+<!-- Inline CSS -->
+    <p class="intro" style="color: rgb(64, 64, 198); background-color: chartreuse;">Hello! My name is Brandon.</p>
+
+    <p class="intro">Hello Again!</p>
+
+    <span> Hello I am an inline element</span>
+    <span> Hello I am an inline element</span>
+    <span> Hello I am an inline element</span>
+
+    <h2>Brandon W</h2>
+    <p>Hello, my name is Brandon and I am trying to figure this stuff out!</p>
+
+
+    <a href="https://example.com">Visit my website</a>
+    <img src="profile.jpg" alt="Profile Picture">
+    
+    <div class="box">
+        This is a box with padding, border, and margin.
+    </div>
+    
+    <form action="/submit-profile" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="hobbies">Choose your hobbies:</label>
+        <select id="hobbies" name="hobbies" multiple>
+            <option value="coding">Coding</option>
+            <option value="reading">Reading</option>
+            <option value="gaming">Gaming</option>
+            <option value="traveling">Traveling</option>
+        </select>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

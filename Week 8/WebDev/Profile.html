@@ -1,0 +1,94 @@
+<!--comments in html -->
+
+
+<!DOCTYPE html><!--Declares the docutment type and version of html-->
+<html> <!--Root element of an html document: to specify this is html formatting-->
+<head> <!--Contains the meta-information/page details, not neccissarily displayed-->
+    <title>My Profile</title> <!-- will not display on the page, but displays on the tab-->
+</head>
+<body style="background-color:#000000;"></body>
+<body> <!--anything that is visible on the website (elements)
+    elements are the building blocks of your page... if its not visible on the page, not considered an element
+    elements have an open tag '<', the details/content inside, and a closing tag '>' 
+    attrributes priovde additional information about elements and are includewd inside the start tag -->
+    
+    <img src="C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 8\WebDev\BW_Logo.jpg" alt="Profile Picture">
+
+    <h1 style="color:#ffffff">Welcome to 
+        <span>My Profile</span></h1> <!--header tag, h1/h2/h3/h4/h5/h6 options-->
+    <style>h1 span {color: goldenrod;}
+        h1 {color: white;} </style> <!--change header to 2 different colors-->
+
+    <!--class attibute is used to group elements together-->
+    <p style="color:#ffffff" class="intro">Hello! My name is Brandon, and I am a struggling web developer in training.</p>
+
+
+    <!-- Inline and Block Elements
+        HTML elements can either be inline or block elemnts
+        Inline elements do not start on a new line and only rtake up as much width as necessary
+        Some example are <span>, <a>, <img>
+
+        Block Elements start on a new line and take up the full width available
+        Some examples are <div>, <h1-h6>, <p> -->
+    
+        <a style="color:#ffffff" href="https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif" target="_blank">Visit my website</a>
+        <br> <!-- line break to create new line-->
+        <br>
+
+    <!-- Forms
+        HTML forms are used to get input data from a user and then submit it to some kind of api
+        The way we can organize the forms and represent the data is based on the type fo input we expect from the client
+        Some examples are text, radio button, checkbox, select box, multi-select box, etc
+    -->
+    
+    <form action="http://localhost:4343/profiles" method="post">
+        <label style="color:#ffffff" for="name">Name:</label>
+        <input type="text" id="name" name="name">
+            <br>
+        <label style="color:#ffffff" for="email">Email:</label>
+        <input type="email" id="email" name="email">
+            <br>
+        <label style="color:#ffffff" for="hobbies">Choose your hobbies:</label>
+        <select id="hobbies" name="hobbies" multiple>
+            <option value="coding">Coding</option>
+            <option value="reading">Reading</option>
+            <option value="gaming">Gaming</option>
+            <option value="traveling">Traveling</option>
+        </select>
+            <br>
+        <label style="color:#ffffff" for="Region">Choose your region:</label>
+        <select id="region" name="region">
+            <option value="eastcoast">East Coast</option>
+            <option value="westcoast">West Coast</option>
+        </select>
+            <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Tables
+        Tables can be formatted in many ways to organiz your data in a tabular fashion    
+    -->
+    <br>
+    <br>
+    <h2 style="color:#ffffff">Table Example</h2>
+    <table>
+        <tr>
+          <th align="left" style="color:#ffffff">Company</th>
+          <th align="left" style="color:#ffffff">Contact</th>
+          <th align="left" style="color:#ffffff">Country</th>
+        </tr>
+        <tr>
+          <td style="color:#ffffff">Alfreds Futterkiste</td>
+          <td style="color:#ffffff">Maria Anders</td>
+          <td style="color:#ffffff">Germany</td>
+        </tr>
+        <tr>
+          <td style="color:#ffffff">Centro comercial Moctezuma</td>
+          <td style="color:#ffffff">Francisco Chang</td>
+          <td style="color:#ffffff">Mexico</td>
+        </tr>
+      </table>
+    
+</body>
+</html>
