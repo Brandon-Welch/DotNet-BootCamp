@@ -1,0 +1,12 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\MyWebApi.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\appsettings.Development.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\appsettings.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\MyWebApi.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\MyWebApi.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\MyWebApi.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\MyWebApi.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\Microsoft.OpenApi.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\Week 11\MyWebApi\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
