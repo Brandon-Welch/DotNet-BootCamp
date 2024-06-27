@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        //target specifies the output language level
+            //ExmaScript6
+      "target": "ES6",
+        //Module specifies the module code generation method
+      "module": "commonjs",
+        //OutDir is the directory for compiled output
+      "outDir": "./dist",
+        //rootdir describes where the root directory is
+      //"rootDir": "./src",
+      "strict": true
+    },
+    //"include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
