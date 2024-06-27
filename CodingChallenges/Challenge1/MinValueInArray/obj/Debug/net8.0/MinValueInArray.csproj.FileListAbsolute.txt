@@ -1,0 +1,15 @@
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\bin\Debug\net8.0\MinValueInArray.exe
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\bin\Debug\net8.0\MinValueInArray.deps.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\bin\Debug\net8.0\MinValueInArray.runtimeconfig.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\bin\Debug\net8.0\MinValueInArray.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\bin\Debug\net8.0\MinValueInArray.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.AssemblyInfoInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.AssemblyInfo.cs
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.csproj.CoreCompileInputs.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.sourcelink.json
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\refint\MinValueInArray.dll
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.pdb
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\MinValueInArray.genruntimeconfig.cache
+C:\Users\A140953\Documents\RevatureTraining\DotNetBootCamp\DotNetBootCamp\CodingChallenges\Challenge1\MinValueInArray\obj\Debug\net8.0\ref\MinValueInArray.dll
