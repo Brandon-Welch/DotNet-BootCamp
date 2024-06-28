@@ -9,7 +9,7 @@ function NavBar() {
   return (
   <>
   <div id="header">
-    <Link id="login-link" to={useState ? "/WelcomeLoggedInUser" : "/Login"}>
+    <Link id="login-link" to={useState ? "/WelcomeLoggedInUser" : "/"}>
       <img src={logo} alt="Logo" id="header-logo" />
     </Link>
 
@@ -28,7 +28,8 @@ function NavBar() {
             </li>
 
             <li>
-              <Link to="passwordreset">
+            {/* Should we make this a button on login? */}
+              <Link to="passwordreset"> 
                 Password
                 Reset
               </Link>
@@ -43,25 +44,7 @@ function NavBar() {
           </ul>
         </li>
 
-        <li className="dropdown">
-          {" "}
-          Administrative{" "}
-          <ul className="dropdown-content">
-            <li>
-              <Link to="Admin">
-                 Admin
-                Page{" "}
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="Reporting">
-             {" "}
-                Reporting{" "}
-              </Link>{" "}
-            </li>
-          </ul>
-        </li>
-
+        
         <li className="dropdown">
           {" "}
           Leave{" "}
@@ -87,6 +70,24 @@ function NavBar() {
           </ul>
         </li>
 
+        <li className="dropdown">
+          {" "}
+          Administrative{" "}
+          <ul className="dropdown-content">
+            <li>
+              <Link to="Admin">
+                 Admin
+                Page{" "}
+              </Link>{" "}
+            </li>
+            <li>
+              <Link to="Reporting">
+             {" "}
+                Reporting{" "}
+              </Link>{" "}
+            </li>
+          </ul>
+        </li>
 
       </ul>
     </div>

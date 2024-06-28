@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-
 import { User, UserLoginInput } from '../LoginComponent';
+import "./LoginFormComponent.css";
 
 function LoginFormComponent(props: any) {
     /*
@@ -36,13 +36,39 @@ function LoginFormComponent(props: any) {
         props.setLoginInput(userInput);
     }
 
+    function myModal(){
+        <div className="modal"  role="dialog">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title">Modal title</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary">Save changes</button>
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    }
+
   return (
-    <div>
-        <input onChange={usernameInputChangeHandler} type="text" placeholder='username'></input>
+    <div className='LoginForm'>
+        <h3>.Net Workforce User Login:</h3>
+        <input className='username' onChange={usernameInputChangeHandler} type="text" placeholder='username'></input>
         <br/>
-        <input onChange={passwordInputChangeHandler} type="password" placeholder='password'></input>
+        <input className='password' onChange={passwordInputChangeHandler} type="password" placeholder='password'></input>
         <br/>
-        <input onClick={submitClickHandler} type="button" value="Submit"></input>
+        <input className='submit_btn' onClick={submitClickHandler} type="button" value="Submit"></input>
+        <input className='forgot_btn' type="button" data-toggle="modal" onClick={myModal} value="Forgot PAssword"></input>
+        <p><a className='forgot_password' href="forgotpassword">Forgot Password?</a></p>
+                
     </div>
   )
 }

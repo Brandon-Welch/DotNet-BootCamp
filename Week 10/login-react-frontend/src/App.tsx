@@ -4,6 +4,8 @@ import LoginComponent, { User } from './Components/LoginComponent/LoginComponent
 import UserProfileComponent from './Components/UserProfileComponent/UserProfileComponent';
 import { UserContext } from './context/UserContext';
 import NavBar from './Components/NavBar/NavBar';
+import ProfileComponent from './Components/ProfileComponent/ProfileComponent';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 
 function App() {
   /*
@@ -11,16 +13,18 @@ function App() {
 
   */
   const [user, setUser] = useState<User | undefined>(undefined);
-
-  return (
+  
+  return ( 
     <div className="App">
-      <UserContext.Provider value={user}>
-        <UserProfileComponent/>
+      {/* <UserContext.Provider value={user}> */}
+        {/* <UserProfileComponent/> */}
         <NavBar/>
         <Routes>
-          <Route path="/" element={<LoginComponent setUser={setUser}/>}/>
+          <Route path="/login" element={<LoginComponent setUser={setUser}/>}/>
+          <Route path="/profile" element={<ProfileComponent/>}></Route>
+          <Route path="/forgotpassword" element={<ForgotPassword/>}></Route>
         </Routes>
-      </UserContext.Provider>
+      {/* </UserContext.Provider> */}
     </div>
   );
 }
