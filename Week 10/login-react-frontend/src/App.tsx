@@ -6,6 +6,7 @@ import { UserContext } from './context/UserContext';
 import NavBar from './Components/NavBar/NavBar';
 import ProfileComponent from './Components/ProfileComponent/ProfileComponent';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import PasswordReset from './Components/PasswordReset/PasswordReset';
 
 function App() {
   /*
@@ -20,9 +21,10 @@ function App() {
         {/* <UserProfileComponent/> */}
         <NavBar/>
         <Routes>
-          <Route path="/login" element={<LoginComponent setUser={setUser}/>}/>
+          <Route path="/" element={<LoginComponent setUser={setUser}/>}/>
           <Route path="/profile" element={<ProfileComponent/>}></Route>
           <Route path="/forgotpassword" element={<ForgotPassword/>}></Route>
+          <Route path="/resetpassword" element={<PasswordReset/>}></Route>
         </Routes>
       {/* </UserContext.Provider> */}
     </div>

@@ -21,7 +21,7 @@ function NavBar() {
           <ul className="dropdown-content">
             <li>
               {" "}
-              <Link to="login">
+              <Link to="/">
                 {" "}
                  Login{" "}
               </Link>
@@ -29,14 +29,14 @@ function NavBar() {
 
             <li>
             {/* Should we make this a button on login? */}
-              <Link to="passwordreset"> 
-                Password
+              <Link to="resetpassword"> 
                 Reset
+                Password
               </Link>
             </li>
 
             <li>
-              <Link to="login">
+              <Link to="/">
                 {" "}
                 Logout
               </Link>
