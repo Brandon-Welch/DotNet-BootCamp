@@ -7,6 +7,8 @@ import NavBar from './Components/NavBar/NavBar';
 import ProfileComponent from './Components/ProfileComponent/ProfileComponent';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import PasswordReset from './Components/PasswordReset/PasswordReset';
+import Footer from './Components/FooterComponent/FooterComponent';
+import ScrollButton from './Components/ScrollButton/ScrollButton';
 
 function App() {
   /*
@@ -26,6 +28,8 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword/>}></Route>
           <Route path="/resetpassword" element={<PasswordReset/>}></Route>
         </Routes>
+        <Footer/>
+        <ScrollButton /> 
       {/* </UserContext.Provider> */}
     </div>
   );

@@ -8,18 +8,40 @@
     border-radius: 10px;
 }
 
-.username{
+.login-header{
+    margin-top: 0%;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
 
+.username{
+    margin-bottom: 2%;
+    text-indent: 5%;
 }
 
 .password{
-
+    margin-bottom: 2%;
+    text-indent: 5%;
 }
 
 .submit_btn{
-
+    margin-bottom: 2%;
+    
 }
 .forgot_password{
     color: rgb(255, 255, 255);
     font-size: smaller;
+}
+
+.error-message {
+    color: red;
+    font-weight: 400;
+    text-align: center;
+}
+
+.forgot-header{
+    margin-top: 0%;
+    margin-bottom: 5%;
+    text-align: center;
 }
